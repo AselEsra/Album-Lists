@@ -11,9 +11,9 @@
 
 A basic Gui to keep album names and properties of them. Created with **javafx**. With the help of **mysql** all of the data inserted, deleted and updated will remain in a database. There are **9** classes & files in total (without the images), which are;
 
-- ***Main.java :*** To start the Gui
-- ***Controller.java :*** Where all of the functions are written
-- ***sample.fxml :*** Codes written when interface is made with **SceneBuilder**
+- ***Main.java :*** To start the Gui.
+- ***Controller.java :*** Where all of the functions are written.
+- ***sample.fxml :*** Codes written when interface is made with **SceneBuilder**.
 - ***Music.java :*** Parent class.
 - ***Songs.java :*** Child class which inherits from Music class and uses polymorphism.
 - ***SongsTest.java :*** Test class made with JUnit testing (5 Tests are made).
