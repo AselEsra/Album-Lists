@@ -108,9 +108,10 @@ public class Controller implements Initializable {
         tfYear.clear();
     }
     private void updateRecord(){
-        String query = "UPDATE songs SET id = " + tfID.getText() + ", artist = '" + tfArtist.getText() + "', album = '" + tfAlbum.getText() + "', genre = '" + tfGenre.getText() + "', year = " + tfYear.getText() + "";
+        String query = "UPDATE songs SET artist = '" + tfArtist.getText() + "', album = '" + tfAlbum.getText() + "', genre = '" + tfGenre.getText() + "', year = " + tfYear.getText() + "WHERE id = " + tfID.getText() + "";
         executeQuery(query);
         showSongs();
+
     }
     private void deleteRecord(){
         String query = "DELETE FROM songs WHERE id = " + tfID.getText() + "";
