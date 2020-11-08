@@ -9,7 +9,7 @@
 
 ## Project Description
 
-A basic Gui to keep album names and properties of them. Created with **javafx**. With the help of **mysql** all of the data inserted, deleted and updated will remain in a database. There are **9** classes & files in total, which are;
+A basic Gui to keep album names and properties of them. Created with **javafx**. With the help of **mysql** all of the data inserted, deleted and updated will remain in a database. There are **9** classes & files in total (without the images), which are;
 
 - ***Main.java :*** To start the Gui
 - ***Controller.java :*** Where all of the functions are written
