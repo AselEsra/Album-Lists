@@ -9,7 +9,7 @@
 
 ## Project Description
 
-A basic Gui to keep album names and properties of them. Created with **javafx**. With the help of **mysql** all of the data inserted, deleted and updated will remain in a database called ***lib.sql*** file (reading from lib file and writing on it). There are 7 classes & files in total, whish are;
+A basic Gui to keep album names and properties of them. Created with **javafx**. With the help of **mysql** all of the data inserted, deleted and updated will remain in a database. There are **9** classes & files in total, which are;
 
 - ***Main.java :*** To start the Gui
 - ***Controller.java :*** Where all of the functions are written
@@ -18,8 +18,10 @@ A basic Gui to keep album names and properties of them. Created with **javafx**.
 - ***Songs.java :*** Child class which inherits from Music class and uses polymorphism.
 - ***SongsTest.java :*** Test class made with Junit testing.
 - ***bgImg.css :*** For the background of the interface.
+- ***lib.sql :*** Data is read and written on this file.
 
-`A jar file is used in order to connect mysql to java.`
+
+`Also jar file is used in order to connect mysql to java.`
 
 <img src="https://user-images.githubusercontent.com/64264345/98457614-64446a80-21b3-11eb-8255-b0e0b57324ca.jpg" width="300">
 
