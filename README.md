@@ -16,7 +16,7 @@ A basic Gui to keep album names and properties of them. Created with **javafx**.
 - ***sample.fxml :*** Codes written when interface is made with **SceneBuilder**
 - ***Music.java :*** Parent class.
 - ***Songs.java :*** Child class which inherits from Music class and uses polymorphism.
-- ***SongsTest.java :*** Test class made with Junit testing.
+- ***SongsTest.java :*** Test class made with JUnit testing (5 Tests are made).
 - ***bgImg.css :*** For the background of the interface.
 - ***lib.sql :*** Data is read and written on this file.
 
@@ -39,3 +39,40 @@ A basic Gui to keep album names and properties of them. Created with **javafx**.
 
 <img src="https://user-images.githubusercontent.com/64264345/98457436-6a394c00-21b1-11eb-9a43-367bdd3c1590.jpg" width="700"> <img src="https://user-images.githubusercontent.com/64264345/98457433-673e5b80-21b1-11eb-8900-e2806cf1e751.jpg" width="700">
 
+> ### JUnit Tests
+
+``` Java
+package sample;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.Assert.*;
+
+class SongsTest {
+    Songs song = new Songs(1,"NF","The Search", "Hip-Hop",2019);
+
+    @Test
+    void getId() {
+        assertEquals(1, song.getId());
+    }
+
+    @Test
+    void getArtist() {
+        assertEquals("NF", song.getArtist());
+    }
+
+    @Test
+    void getAlbum() {
+        assertEquals("The Search", song.getAlbum());
+    }
+
+    @Test
+    void getGenre() {
+        assertEquals("Hip-Hop", song.getGenre());
+    }
+
+    @Test
+    void getYear() {
+        assertEquals(2019, song.getYear());
+    }
+}
+```
